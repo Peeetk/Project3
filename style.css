@@ -1,3 +1,4 @@
+
 /* General Styling */
 body {
   font-family: Arial, sans-serif;
@@ -113,7 +114,7 @@ p {
 }
 
 #next-subject-btn {
-  margin-top: 20px;
+  argin-top: 20px;
   padding: 10px 20px;
   background: #28a745;
   color: white;
@@ -146,3 +147,4 @@ p {
     padding: 5px;
     background-color: #0056b3;
 }
+
