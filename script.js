@@ -9,6 +9,16 @@ const quizData = {
             question: "Which UK city is known as the 'Steel City'?",
             options: ["Leeds", "Sheffield", "Newcastle", "Liverpool"],
             answer: 1 // Sheffield
+        },
+        {
+            question: "Where is the oldest pub in UK?",
+            options: ["Edinburgh", "South-and-on-Sea", "Derby", "Nottingham"],
+            answer: 3 // Nottingham
+        },
+        {
+            question: "Where is the longest Pier in UK?",
+            options: ["Cardiff", "Bournemouth", "Skegness", "South-and-on-Sea"],
+            answer: 3 // South-and-on-sea
         }
     ],
     "General Knowledge": [
@@ -21,6 +31,28 @@ const quizData = {
             question: "What is the capital of France?",
             options: ["Rome", "Paris", "Berlin", "Madrid"],
             answer: 1 // Paris
+        }
+    ],
+    "Cartoon characters": [
+        {
+            question: "What is the name of the cat in Tom and Jerry Show?",
+            options: ["Jenny", "Lily", "Tom", "Jerry"],
+            answer: 2 // Tom
+        },
+        {
+            question: "Who is Buley?",
+            options: ["House", "Drink", "Dog", "Flower"],
+            answer: 2 //Dog
+        },
+        {
+            question: "Who is the main characters in Paw Petrol?",
+            options: ["Major Humdinger", "Marshall", "Major Goddway", "Rider and the pups"],
+            answer: 3 // Rider and the pups
+        },
+        {
+            question: "What is the name of the red car in Blaze?",
+            options: ["Crasher", "Pickle", "Zeg", "Blaze", "Stripe"],
+            answer: 3 // Blaze
         }
     ]
 };
@@ -39,6 +71,7 @@ function loadQuestion() {
     const nextButton = document.getElementById("next-btn");
     const subjectButton = document.getElementById("next-subject-btn");
     const scoreDisplay = document.getElementById("score-display");
+    
 
     optionsContainer.innerHTML = "";
     nextButton.style.display = "none";
@@ -60,7 +93,7 @@ function loadQuestion() {
         optionsContainer.appendChild(button);
     });
 
-    scoreDisplay.textContent = `Score: ${score} | Total Score: ${totalScore}`;
+    scoreDisplay.textContent = `Total Score: ${totalScore}`;
 }
 
 function selectAnswer(selectedIndex) {
@@ -81,7 +114,7 @@ function selectAnswer(selectedIndex) {
         totalScore++; // Accumulates across subjects
     }
 
-    document.getElementById("score-display").textContent = `Score: ${score} | Total Score: ${totalScore}`;
+    document.getElementById("score-display").textContent = `Total Score: ${totalScore}`;
     document.getElementById("next-btn").style.display = "block";
 }
 
