@@ -65,6 +65,7 @@ let score = 0; // Resets per subject
 let totalScore = 0; // Accumulates across all subjects
 let totalQuestions = Object.values(quizData).reduce((sum, questions) => sum + questions.length, 0); // Fixed calculation
 
+
 function loadQuestion() {
     const questionElement = document.getElementById("question");
     const optionsContainer = document.getElementById("options");
