@@ -17,7 +17,7 @@ const quizData = [
     {
         "question": "Where is the longest Pier in UK?",
         "options": ["Cardiff", "Bournemouth", "Skegness", "Southend-on-Sea"],
-        "answer": 3 //Southend on sea
+        "answer": 3 //Southend-on-sea
     },
     {
         "question": "Who wrote 'Hamlet'?",
