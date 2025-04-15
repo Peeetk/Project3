@@ -22,7 +22,7 @@ const quizData = [
     {
         "question": "Who wrote 'Hamlet'?",
         "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "J.K. Rowling"],
-        "answer": 1 //W. Shakespare
+        "answer": 1 //William Shakespeare
     },
     {
         "question": "What is the capital of France?",
@@ -127,6 +127,6 @@ function showFinalResults() {
     document.getElementById("next-btn").style.display = "none";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadQuestion();
+document.addEventListener("DOMContentLoaded", function () {
+  loadQuestion();
 });
