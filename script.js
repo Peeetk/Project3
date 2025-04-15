@@ -11,7 +11,7 @@ const quizData = [
     },
     {
         "question": "Where is the oldest pub in UK?",
-        "options": ["Edinburgh", "South-and-on-Sea", "Derby", "Nottingham"],
+        "options": ["Edinburgh", "Southend-on-Sea", "Derby", "Nottingham"],
         "answer": 3 //Nottingham
     },
     {
